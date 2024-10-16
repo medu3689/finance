@@ -1,0 +1,299 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: #007bff;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffc107;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Hero Section Styles */
+header {
+  position: relative;
+  height: 80vh;
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: rgb(47, 8, 241);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  z-index: 1;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+header .btn {
+  margin-top: 20px;
+  background: #ffc107;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+header .btn:hover {
+  background: #e0a800;
+}
+
+/* Section Styles */
+.content-section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tip-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+
+
+/* Share Your Dreams Section */
+#dreams {
+  background-color: #f9f9f9; /* Light background for the section */
+  padding: 60px 0;
+  text-align: center;
+}
+
+#dreams h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  background-color: #333;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#dreams p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+#dreams form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#dreams input[type="text"],
+#dreams input[type="email"],
+#dreams textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+#dreams textarea {
+  height: 150px;
+}
+
+#dreams .btn {
+  display: inline-block;
+  background-color: #5cb85c; /* Green button */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+#dreams .btn:hover {
+  background-color: #4cae4c; /* Darker green on hover */
+}
+
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+      display: none;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  header h1 {
+      font-size: 2.5rem;
+  }
+
+  header p {
+      font-size: 1.2rem;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 15px;
+}
+
+.social-icons li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #222;
+  font-size: 13px;
+}
